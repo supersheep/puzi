@@ -12,7 +12,9 @@
     "assert": "*"
   },
   "dependencies": {
-    "jquery": "^1.9.1"
+    "jquery": "^1.9.1",
+    "alphatab": "~0.1.0",
+    "swfobject": "^2.3.0"
   },
   "repository": "git://github.com/supersheep/puzi.git",
   "keywords": [

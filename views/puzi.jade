@@ -1,8 +1,18 @@
 extend layout
 
 block style
+  +css("gh-buttons")
   +css("puzi")
+  style.
+    .alphaTabSurface { box-shadow: 0 0 10px rgba(0,0,0,0.3); background:#FFF; border-radius:3px; }
 
 block content
-  #lalala
+  #alphaTab(data-file="fixtures/Effects.gp3",data-tracks="3")
+  #controls
+    #loadingInfo Player not ready
+    #sfInfo Loading Soundfont
+      span.progress
+    button#playPause.button.play(disabled="disabled") Play
+    button#stop.button(disabled="disabled") Stop
+
   +facade("puzi")

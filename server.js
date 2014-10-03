@@ -13,6 +13,7 @@ app.use(function(req,res,next){
 });
 
 app.use(express.static( path.join(__dirname, 'neurons') ));
+app.use(express.static( path.join(__dirname, 'public') ));
 app.use(routes.puzi);
 
 app.listen(3000, function(){
