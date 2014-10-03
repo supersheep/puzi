@@ -1,0 +1,30 @@
+{
+  "name": "puzi",
+  "version": "0.1.0",
+  "description": "The coolest cortex module.",
+  "entries": [
+    "entries/**/*.js"
+  ],
+  "css": [
+    "style/*.css"
+  ],
+  "devDependencies": {
+    "assert": "*"
+  },
+  "dependencies": {
+    "jquery": "^1.9.1"
+  },
+  "repository": "git://github.com/supersheep/puzi.git",
+  "keywords": [
+    "puzi"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "cortex-admin",
+    "email": "supersheepxjy@gmail.com"
+  },
+  "bugs": {
+    "url": "http://github.com/supersheep/puzi/issues"
+  },
+  "homepage": "http://github.com/supersheep/puzi"
+}

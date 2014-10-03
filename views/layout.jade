@@ -1,0 +1,32 @@
+- var sitename = "- 谱子 -"
+mixin css(name)
+  link(href="puzi/#{package_version}/style/#{name}.css", rel="stylesheet")
+
+mixin facade(name)
+  script.
+    facade({
+      entry: "puzi@#{package_version}/entries/#{name}.js"
+    });
+
+doctype html
+html
+  head
+    title= title || sitename
+    script(src="/neuron/7.1.3/neuron.js")
+    script(src="/config.js")
+    script.
+      neuron.config({path:"/"});
+    block style
+
+    script.
+      window.onerror = function(msg,url,line){
+        var e = encodeURIComponent;
+        var img_url = "/error.gif?"
+             + "msg=" + e(msg)
+             + "&url=" + e(url)
+             + "&line=" + e(line);
+        var img = new Image();
+        img.src = img_url;
+      }
+  body(id="#{id}")
+    block content
